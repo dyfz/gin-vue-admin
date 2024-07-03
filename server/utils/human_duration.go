@@ -6,8 +6,9 @@ import (
 	"time"
 )
 
+// ParseDuration 支持“xdxhxmxs"和数字字符串转换成time.duration类型
 func ParseDuration(d string) (time.Duration, error) {
-	d = strings.TrimSpace(d)
+	d = strings.TrimSpace(d) //移除字符串两端的空白字符
 	dr, err := time.ParseDuration(d)
 	if err == nil {
 		return dr, nil

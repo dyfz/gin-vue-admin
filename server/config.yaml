@@ -89,9 +89,9 @@ mysql:
   path: ""
   port: ""
   config: ""
-  db-name: ""
-  username: ""
-  password: ""
+  db-name: "go_vue_admin"
+  username: "root"
+  password: "starunion"
   max-idle-conns: 10
   max-open-conns: 100
   log-mode: ""
